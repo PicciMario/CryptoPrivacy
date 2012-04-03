@@ -29,6 +29,15 @@ The root CA should be already initialized (this is not managed by the software).
 - - - root.pem (private root key)
 - - - root-crl.pem (root crl)
 
+After this, you also need to init the index and serial files for the root CA:
+
+- touch root-ca/conf/index
+- echo "01" > root-ca/conf/serial
+
+At last, you need to copy the files in the root-ca/public dir in the cadir directory (this is where the software looks for root cert and crl when verifying other certs). After this you need to call the c_rehash utility.
+
+- c_rehash cadir
+
 Standard directory structure:
 -----------------------------
 - users/ (all first level users)
