@@ -1,6 +1,6 @@
 [ req ]
 default_bits            = 2048
-default_keyfile         = ./root-CA/private/root.pem
+default_keyfile         = ./root-ca/private/root.pem
 default_md              = sha1
 prompt                  = yes 
 distinguished_name      = user_ca_distinguished_name
@@ -43,11 +43,11 @@ default_ca              = CA_default
 
 [ CA_default ]
 dir                     = .
-new_certs_dir           = ./root-CA/signed-keys/
-database                = ./root-CA/conf/index
-certificate             = ./root-CA/public/root.pem
-serial                  = ./root-CA/conf/serial
-private_key             = ./root-CA/private/root.pem
+new_certs_dir           = ./root-ca/signed-keys/
+database                = ./root-ca/conf/index
+certificate             = ./root-ca/public/root.pem
+serial                  = ./root-ca/conf/serial
+private_key             = ./root-ca/private/root.pem
 x509_extensions         = usr_cert
 name_opt                = ca_default
 cert_opt                = ca_default
