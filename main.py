@@ -24,7 +24,7 @@ Standard directory structure:
 
 --> crls (third parties crls, for checking received files)
 
---> root-CA (root CA)
+--> root-ca (root CA)
     --> private
         --> root.pem
     --> public
