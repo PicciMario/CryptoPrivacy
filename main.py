@@ -41,7 +41,7 @@ import sys, os, subprocess, re, time
 
 CONFIG = {}
 CONFIG['root_available'] = False
-CONFIG['root_dir'] = "root-CA"
+CONFIG['root_dir'] = "root-ca"
 CONFIG['root_conf'] = os.path.join(CONFIG['root_dir'], "conf/openssl.cnf")
 CONFIG['users_dir'] = "users"
 CONFIG['certs_dir'] = "certs"
