@@ -7,8 +7,6 @@ Released under MIT License
 
 This software was developed as a mean to test a two-level CA approach for securing the exchange and management of personal data. This software works with certificates put in a predefined directory structure, and relies on the OpenSSL command line software to perform cryptographic operations. 
 
-<hr>
-
 Setup
 -----
 The software needs to be run in a path which also contains the following directories. They must exist and be initialized as described.
@@ -20,8 +18,6 @@ The software needs to be run in a path which also contains the following directo
 - config: should have been already initialized.
 - cadir: should contain root cert and root CRL. It must be hashed with the "c_rehash" utility provided with OpenSSL any time content is added or changed.
 
-<hr>
-
 Init root CA
 ------------
 The root CA should be already initialized (this is not managed by the software). The files must be copied (if they already exist) or be generated (for example with the OpenSSL utility) and put in the following paths with the following file names:
@@ -32,8 +28,6 @@ The root CA should be already initialized (this is not managed by the software).
 - - public/
 - - - root.pem (private root key)
 - - - root-crl.pem (root crl)
-
-<hr>
 
 Standard directory structure:
 -----------------------------
