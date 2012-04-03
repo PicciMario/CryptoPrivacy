@@ -711,6 +711,8 @@ while 1:
 				path = os.path.join(CONFIG['users_dir'], name)
 				if (os.path.isdir(path)):
 					print("-> " + name)
+				else:
+					continue
 				
 				cert = os.path.join(path, "public", "cert.crt")
 				if (os.path.isfile(cert)):
